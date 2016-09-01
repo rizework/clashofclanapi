@@ -44,14 +44,3 @@ class API(object):
 
     def get_clan_warlog(self, tag):
         return self.fetch('clans/' + urllib.quote_plus(tag) + '/warlog')
-
-
-'self test'
-
-if __name__ == '__main__':
-    print 'test'
-    api = API('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6ImMwZjhiNWVkLWUwNzktNDYyMC05ODYyLTcwY2Y1NDY5MTQ4ZiIsImlhdCI6MTQ3MjMwMTMzNywic3ViIjoiZGV2ZWxvcGVyLzQzNDNjMDY5LTBlZGEtZjNkOS04MmE5LWU0YmY5YWVmZjZlOCIsInNjb3BlcyI6WyJjbGFzaCJdLCJsaW1pdHMiOlt7InRpZXIiOiJkZXZlbG9wZXIvc2lsdmVyIiwidHlwZSI6InRocm90dGxpbmcifSx7ImNpZHJzIjpbIjExOC4xMDcuMTMwLjE2MiJdLCJ0eXBlIjoiY2xpZW50In1dfQ.kkWBKYgY3sPFW8pzD_TW2AO20tE1Y4sRk89Y4y8_3Q9cB-j2mynn89aEufz-MtQoTBQDUZUY--vFRek2PzJ71w')
-    print api.search_clan('ozaki league')
-    print api.get_clan_info('#QU9R8P09')
-    print api.get_clan_members('#QU9R8P09')
-    print api.get_clan_warlog('#QU9R8P09')  # 403 in case of private war log
